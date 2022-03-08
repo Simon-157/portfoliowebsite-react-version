@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 import NavBar from './Navbar'
-import About from './About';
+import "../Dark.css";
  
 
 
@@ -10,11 +10,6 @@ function Home() {
 
   return(
     
-            
-        <><div><NavBar />
-        
-        </div>
-        
         <section className="home" id="home">
 
                 <div className="image">
@@ -35,11 +30,6 @@ function Home() {
                
         </section>
                 
-           
-
-        
-        </>
-
 )
 
 }

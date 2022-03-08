@@ -4,6 +4,17 @@
 :root{
   --green:#27ae60;
   --black:#2c2c54;
+  --background:white;
+  --bg2:#eee;
+  --text:#2c2c54;
+
+}
+
+[dark-mode='dark']{
+  --green:#52e690;
+  --black:#cccce6;
+  --background:rgba(2, 7, 29, 0.938);
+  --text:rgba(162, 175, 175, 0.678);
 }
 
 *{
@@ -52,15 +63,13 @@ section{
     width: 100%;
     padding: 10px 70px 70px 70px;
     position: relative;
-    background-color: #eee;
+    background-color:var(--background);
     
   }
 
-
-  
   
   .card h2 {
-    color:#2c2c54;
+    color:var(--text);
     font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
@@ -108,7 +117,7 @@ section{
   
   .card .row .form-group label {
     line-height: 30px;
-    color: rgba(3, 11, 49, 0.657);
+    color: var(--text);
     font-size: 24px;
     margin: 0 0 0 30px;
     display: block;
@@ -130,13 +139,13 @@ section{
     box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
     padding: 10px;
     height: 100%;
-    width: 100%;
+    width: 90%;
     cursor: pointer;
     outline: none;
     background: transparent;
     text-transform: uppercase;
-    color: #0f0344b9;
-    line-height: 40px;
+    color:var(--black);
+    line-height: 20px;
     font-size: 24px;
     font-weight: 700;
     border-radius: 45px;
@@ -149,8 +158,9 @@ section{
   
   .card .row input[type="submit"]:hover {
     border: 5px solid rgb(19, 141, 55);
-    color: #ffffff;
+    color: var(--background);
     transition: all 0.4s;
+    background-color: var(--green);
   }
   
   @media screen and (max-width: 900px) {
@@ -174,12 +184,12 @@ section{
 
 
   .footer {
-    background-color:#eee;
-    border-top:2px solid rgb(246, 246, 246);
+    background-color:var(--background);
+    border-top:2px solid var(--black);
     position: fixed;
     width: 100%;
     bottom: 0;
-    color: rgba(6, 6, 29, 0.876);
+    color: var(--text);
     font-size: 25px;
    }
 
@@ -191,3 +201,46 @@ section{
 .heart{
     color:rgb(182, 55, 17);
 }
+
+
+
+.icons{
+    
+    display: flex;
+    justify-content:center;
+    flex-direction:row;
+    flex-wrap: wrap;
+    grid-gap:2px;
+    padding-bottom: 0rem;
+    font-size: 24px;
+}
+
+.cardB .icons .social-icon .social-iconF{
+    height: 40%;
+    width: 40%;
+    color: var(--black);
+    /* position:cover;S */
+    
+}
+
+.cardB{
+    display: flex;
+    justify-content:center;
+    background-color: var(--bg2);
+}
+
+.cardB .icons .social-icon .social-iconF:hover{
+  transform: scale(1.5);
+  border-radius: 100rem;
+  background-color: var(--tog);
+  box-shadow: rgba(25, 190, 33, 0.4) 0px 0px 0px 2px, rgba(44, 189, 25, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -webkit-border-radius: 100rem;
+  -moz-border-radius: 100rem;
+  -ms-border-radius: 100rem;
+  -o-border-radius: 100rem;
+}
+

@@ -1,5 +1,6 @@
 import React from 'react';
-import '../contact.css'
+import '../contact.css';
+import "../Dark.css";
 import { 
     faCopyright,
     faHeartbeat
@@ -19,7 +20,7 @@ const Footer = () => (
       className="heart"
       
       />
-      </p>s
+      </p>
   </footer>
 );
   

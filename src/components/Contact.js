@@ -1,13 +1,14 @@
 import React from 'react';
 import '../contact.css';
 import '../App.css';
+import "../Dark.css";
     
 
 function Contact(){
 
   return(
 
-        <div className="card">
+        <div className="card" id="contact">
         <h2>LETS TALK</h2>
         <div className="row">
             <div className="col">

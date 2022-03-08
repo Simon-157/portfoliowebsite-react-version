@@ -1,58 +1,49 @@
 
-import React from 'react';
+import React, {useState} from 'react';
+import '../App.css';
+import "../Dark.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSun, 
-    faMoon,
+import { 
+    faBars,
     faBan, 
     faLaptopCode, 
     faBell,
     faCircle}
     from "@fortawesome/free-solid-svg-icons";
 
-import '../App.css';
 
 
 
 
 function NavBar() {
 
+   
+
   return(
 
-        <header>
+        <header className="{darkMode ? 'dark-mode' : 'light-mode'}">
             <div className="header-A">
-                <a className="logo" href="#home"><FontAwesomeIcon icon={faBell} />Simon Boateng</a> 
-                <div>
-                    <input type="checkbox" className="checkbox" id="chk" />
-                    <label className="label" for="chk">
-                    <FontAwesomeIcon
-                    icon={faSun} className= "ic"
-                    />
-                    <FontAwesomeIcon 
-                    icon={faMoon} className= "ic"
-                    />
-                        <div className="ball"></div>
-                    </label>
-                </div>
+            <a className="logo" href="#contact"><FontAwesomeIcon className="iconM" icon={faBell} /></a> <a className="logo" href="#home"><img className="iconM"src="/icon.png" alt=""></img>Simon Boateng</a>
 
             </div>
 
             <div className="header-B">
 
-            <div id="menu-bar" class="fas fa-bars"></div>
+            <div id="menu-bar"><FontAwesomeIcon icon={faBars} /></div>
 
                 <nav className="navbar">
                     <a href="#home">home</a>
                     <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
+                    <a href="#category">Projects</a>
                     <a href="#skills">Skills</a>
                     <a href="#frameworks">Frameworks</a>
-                    <a href="#contact">contact</a>
+                    <a href="#contact">Contact</a>
                 </nav>
 
                 <div className="icons">
                     <a href="#home"><FontAwesomeIcon  icon={faLaptopCode} flip="horizontal" /></a>
-                    <a href="#home"><FontAwesomeIcon  icon={faCircle} /></a>
-                    <a href="#home"><FontAwesomeIcon  icon={faBan} /></a>
+                    <a href="#category"><FontAwesomeIcon  icon={faCircle} /></a>
+                    <a href="#frameworks"><FontAwesomeIcon  icon={faBan} /></a>
                 </div>
 
             </div>

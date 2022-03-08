@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import "../Dark.css";
 
 
 
@@ -8,11 +9,11 @@ function About() {
   return(
 
        
-    <section class="banner-container">
+    <section id="about" className="banner-container">
 
-            <div class="banner">
+            <div className="banner">
                 
-                <div class="content">
+                <div className="content">
                     <h3 >ABOUT ME</h3>
                     <p>My enthusiasm for technology includes both the working 
                     technology itself and the use to which it can be put in the modern world.
@@ -27,9 +28,9 @@ function About() {
                 </div>
             </div>
 
-            <div class="banner">
+            <div className="banner">
                 
-                <div class="content">
+                <div className="content">
                     <img src="/jnr1.png" alt=""></img>
                 </div>
             </div>
