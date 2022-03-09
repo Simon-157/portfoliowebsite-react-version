@@ -522,6 +522,7 @@ section{
   width: 10rem;
   margin:.5rem 0;
   height: 5rem;
+  color:rgb(0, 0, 0);
 }
 
 .category .box-container .boxF{
@@ -870,8 +871,6 @@ section{
 }
 
 @media(max-width:550){
-  
-
     .category .box-containerP{
       border:.1rem solid rgba(0,0,0,.3);
       border-radius: 2rem;
@@ -885,7 +884,5 @@ section{
       -moz-border-radius: 2rem;
       -ms-border-radius: 2rem;
       -o-border-radius: 2rem;
-    
-  
   }
 }
