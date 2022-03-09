@@ -13,7 +13,7 @@ function Project() {
 
   return(
 
-    <section className="category" id="category">
+    <section className="category categoryF" id="category">
 
     <h1 className="heading">My <span>PROJECTS</span></h1>
     

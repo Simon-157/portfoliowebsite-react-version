@@ -1,6 +1,7 @@
 import React from 'react';
 import { AnimationOnScroll} from 'react-animation-on-scroll'
 import '../App.css';
+import '../contact.css';
 
 
 
@@ -9,7 +10,7 @@ function Frameworks() {
   return(
       
 
-    <section className="category" id="frameworks">
+    <section className="category categoryS" id="frameworks">
 
         <h1 className="heading">SIMPLIFYING THE WEB WITH <span>FRAMEWORKS</span></h1>
 
@@ -41,9 +42,17 @@ function Frameworks() {
             <img src="https://img.icons8.com/ios/100/000000/maven-ios.png"  alt =""/>
                 
             </div>
+            
             </AnimationOnScroll>
             
-            
+            <a href="#home" >
+                <div className="top-arrow resume" >
+                    <span className="tscroll resume" data="scroll top">
+                        {/* Top */}
+                    </span>
+                    
+                </div>
+            </a>
         </div>
 
     </section>

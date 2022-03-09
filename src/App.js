@@ -1,6 +1,7 @@
 
 import useLocalStorage from 'use-local-storage';
 import './App.css';
+import './contact.css';
 
 import NavBar from './components/Navbar';
 import Home from './components/Home';
@@ -36,12 +37,11 @@ function App() {
           <div>
             <NavBar />
           </div>
-          
           <div className="header-B icons">
-            <input type="checkbox" className="dark-mode checkbox icons" id="chk" onChange={switchMode} />
+            <input type="checkbox" className="dark-mode checkbox" id="chk" onChange={switchMode} />
             <label className="label " for="chk">
             <FontAwesomeIcon
-            icon={faSun} className= "ic "
+            icon={faSun} className= "ic"        
             />
             <FontAwesomeIcon 
             icon={faMoon} className= "ic"
@@ -49,8 +49,6 @@ function App() {
                 <div className="ball"></div>
             </label>
           </div>
-          
-            
           <div>
             <Home />
           </div>

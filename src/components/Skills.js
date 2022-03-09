@@ -8,7 +8,7 @@ function Skills() {
   return(
       
 
-    <section className="category categoryS" id="skills">
+    <section className="category categoryF" id="skills">
         {/* <AnimationOnScroll animateIn="fadeIn" animatePreSroll={false}> */}
 
         <h1 className="heading">LEARNED AND DEVELOPED  <span>SKILLS</span></h1>

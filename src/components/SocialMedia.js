@@ -17,6 +17,14 @@ function Social(){
   return(
       <div className="cardB">
         <div className="icons">
+            <a href="#home" >
+                <div className="top-arrow resume" >
+                    <span className="tscroll resume" data="scroll top">
+                        {/* Top */}
+                    </span>
+                    
+                </div>
+            </a>
             <div className="social-icon">
                 <a href="www.linkedin.com/in/simonboateng2929"><FontAwesomeIcon icon={faComment} className="social-iconF"/>LinkedIn</a>
                 
@@ -36,9 +44,6 @@ function Social(){
             <div className="social-icon">
                 <a href="https://wa.me/+233552592929?text=HiIamSimon"><FontAwesomeIcon className="social-iconF" icon={faPhone}/>WhatSapp</a>
             </div>
-            
-            
-            
         </div>
         </div>
     )
