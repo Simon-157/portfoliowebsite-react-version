@@ -1,4 +1,5 @@
 import React from 'react';
+import { AnimationOnScroll} from 'react-animation-on-scroll'
 import '../App.css';
 import "../Dark.css";
 
@@ -13,27 +14,35 @@ function Frameworks() {
         <h1 className="heading">SIMPLIFYING THE WEB WITH <span>FRAMEWORKS</span></h1>
 
         <div className="box-container">
-
-            <div className="boxF">
-               
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"  alt ="" />
+            <AnimationOnScroll animateIn="animate_bounceIn" animatePreSroll={false}>
+                <div className="boxF">
                 
-            </div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"  alt ="" />
+                    
+                </div>
+            </AnimationOnScroll>
+            <AnimationOnScroll animateIn="animate_bounceIn" animatePreSroll={false}>
             <div className="boxF">
                 
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"  alt =" "/>
                 
             </div>
+            </AnimationOnScroll>
+            <AnimationOnScroll animateIn="animate_bounceIn" animatePreSroll={false}>
             <div className="boxF">
                 
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg"  alt =""/>
                 
             </div>
+            </AnimationOnScroll>
+            <AnimationOnScroll animateIn="animate_bounceIn" animatePreSroll={false}>
             <div className="boxF">
             <h4>Tkinter</h4>  
-            <img className="scrollFade" src="https://img.icons8.com/ios/100/000000/maven-ios.png"  alt =""/>
+            <img src="https://img.icons8.com/ios/100/000000/maven-ios.png"  alt =""/>
                 
             </div>
+            </AnimationOnScroll>
+            
             
         </div>
 

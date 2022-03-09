@@ -1,4 +1,4 @@
-import React,{ useState} from 'react';
+
 import useLocalStorage from 'use-local-storage';
 import './App.css';
 import "./Dark.css";
@@ -31,7 +31,7 @@ function App() {
 
   return(
 
-    
+      
       <div className="App" dark-mode={mode}>
           <div>
             <NavBar />
