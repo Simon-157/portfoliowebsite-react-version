@@ -316,7 +316,7 @@ section{
 
 .home .content .hbtn:hover{
   box-shadow: var(--hbtn) 0px 10px 5px 2px, rgba(44, 189, 25, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-
+  border:5px solid rgba(142, 207, 36, 0.842);
 }
 
 
