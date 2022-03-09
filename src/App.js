@@ -1,7 +1,7 @@
 
 import useLocalStorage from 'use-local-storage';
 import './App.css';
-import "./Dark.css";
+
 import NavBar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';

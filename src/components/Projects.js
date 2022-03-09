@@ -1,7 +1,7 @@
 import React from 'react';
 import { AnimationOnScroll} from 'react-animation-on-scroll';
 import '../App.css';
-import "../Dark.css";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
     faArrowAltCircleRight,

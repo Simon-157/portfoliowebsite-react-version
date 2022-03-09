@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import "../Dark.css";
+
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
  
@@ -30,7 +30,7 @@ function Home() {
 
                         </span>
                         
-                        <p><a href="#About" className="btn hbtn">ABOUT ME</a></p>
+                        <p><a href="#About" className="btn hbtn">ABOUT ME</a><a className="resume" href="https://simonresume.netlify.app/">View Resume</a></p>
                     </AnimationOnScroll>
                 </div>
                

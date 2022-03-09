@@ -1,7 +1,7 @@
 import React from 'react';
 import '../contact.css';
 import '../App.css';
-import "../Dark.css";
+
     
 
 function Contact(){
