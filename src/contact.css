@@ -209,15 +209,19 @@ section{
     display: flex;
     justify-content:space-around;
     flex-direction:row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     grid-gap:2px;
     padding:0rem;
     font-size: 24px;
 }
 
+.iconsT{
+  padding-top: 2rem;
+}
+
 .cardB .icons .social-icon .social-iconF{
-    height: 30%;
-    width: 30%;
+    height: 50%;
+    width: 50%;
     color: var(--black);
     /* position:cover;S */
     
@@ -227,6 +231,7 @@ section{
     display: flex;
     justify-content:center;
     background-color: var(--background);
+    
 }
 
 .cardB .icons .social-icon .social-iconF:hover{
@@ -315,8 +320,8 @@ section{
 
 @media (max-width: 668px){
   .cardB .icons .social-icon .social-iconF{
-    height: 35%;
-    width: 35%;
+    height: 100%;
+    width: 100%;
     color: var(--black);
     flex-wrap:wrap-reverse;
     margin-right: 3rem;
@@ -338,8 +343,8 @@ section{
 
 @media (max-width: 880px){
   .cardB .icons .social-icon .social-iconF{
-    height: 35%;
-    width: 35%;
+    height: 50%;
+    width: 50%;
     color: var(--black);
     flex-wrap:wrap-reverse;
     margin-right: 3rem;
