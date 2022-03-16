@@ -220,10 +220,13 @@ section{
 }
 
 .cardB .icons .social-icon .social-iconF{
-    height: 50%;
-    width: 50%;
+    height: 10%;
+    display:flex;
+    width: 10%;
+    padding-bottom: 2rem;
     color: var(--black);
     /* position:cover;S */
+ 
     
 }
 
@@ -234,20 +237,7 @@ section{
     
 }
 
-.cardB .icons .social-icon .social-iconF:hover{
-  transform: scale(1.5);
-  border-radius: 100rem;
-  background-color: var(--tog);
-  box-shadow: rgba(25, 190, 33, 0.4) 0px 0px 0px 2px, rgba(44, 189, 25, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-  -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -o-transform: scale(1.5);
-  -webkit-border-radius: 100rem;
-  -moz-border-radius: 100rem;
-  -ms-border-radius: 100rem;
-  -o-border-radius: 100rem;
-}
+
 
 
 
@@ -258,11 +248,11 @@ section{
   visibility:hidden;
   opacity: 0;
   background-color: var(--bg2);
-  transition: opacity 1s bounce 0s linear;
-  -webkit-transition: opacity 1s bounce 0s linear;
-  -moz-transition: opacity 1s bounce 0s linear;
-  -ms-transition: opacity 1s bounce 0s linear;
-  -o-transition: opacity 1s bounce 0s linear;
+  transition: opacity 1s fade in 0s linear;
+  -webkit-transition: opacity 1s fade in 0s linear;
+  -moz-transition: opacity 1s fade in 0s linear;
+  -ms-transition: opacity 1s fade in 0s linear;
+  -o-transition: opacity 1s fade in 0s linear;
 }
 
 .tscroll:hover:before {
@@ -276,13 +266,11 @@ section{
   height:20px;
   padding-top: 60px;
   display: grid;
-  background: 
-    linear-gradient(currentColor 0 0) bottom/100px calc(100% - 100px),
-    conic-gradient(from 134deg at top,rgba(32, 173, 91, 0) ,currentColor 1deg 90deg,#0000 91deg) top/100% 15px;
+  background:     linear-gradient(currentColor 0 0) bottom/100px calc(100% - 100px),    conic-gradient(from 134deg at top,rgba(32, 173, 91, 0) ,currentColor 1deg 90deg,#0000 91deg) top/100% 15px;
   background-origin: content-box;
   background-repeat: no-repeat;
-  animation: a10-0 2s infinite;
-  
+  animation: a10-0 50s infinite;
+  -webkit-animation: a10-0 50s infinite;
 }
 
 
@@ -340,12 +328,13 @@ section{
 }
 @media (max-width: 668px){
   .cardB .icons .social-icon .social-iconF{
-    height: 100%;
+    height: 20rem;
     width: 100%;
     color: var(--black);
     flex-wrap:wrap-reverse;
     margin-right: 3rem;
-    
+  
+
 }
 
 
@@ -362,10 +351,12 @@ section{
 }}
 
 
+
+
 @media (max-width: 880px){
   .cardB .icons .social-icon .social-iconF{
-    height: 50%;
-    width: 50%;
+    height: 30%;
+    width: 30%;
     color: var(--black);
     flex-wrap:wrap-reverse;
     margin-right: 3rem;
@@ -386,6 +377,8 @@ section{
 
 
 }
+
+
 
 
 

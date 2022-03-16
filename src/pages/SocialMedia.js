@@ -37,7 +37,7 @@ function Social(){
                 <a href="tel:+233552592929"><FontAwesomeIcon icon={faPhone} className="social-iconF"/></a>
             </div>
             <div className="social-icon">
-                <a href="https://wa.me/+233552592929?text=HiIamSimon"><img className="social-iconF" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt=""/></a>
+                <a href="https://github.com/Simon-157"><img className="social-iconF" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt=""/></a>
             </div>
             <div className="social-icon">
                 <a href="https://wa.me/+233552592929?text=HiIamSimon"><FontAwesomeIcon className="social-iconF" icon={faPhone}/></a>

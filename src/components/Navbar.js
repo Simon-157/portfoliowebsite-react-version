@@ -1,11 +1,10 @@
 
-import React, {useState} from 'react';
+import React from 'react';
 import '../App.css';
-import Menu from './menu';
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
-    faBars,
     faBan, 
     faLaptopCode, 
     faBell,
