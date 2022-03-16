@@ -292,12 +292,13 @@ section{
   grid-area: 1/1;
   background:inherit;
   background-size: 10px calc(100% - 25px),100% 25px;
-  animation: a10-1 2s infinite;
-  /* box-shadow: inset rgba(21, 179, 81, 0.678) 0px 18px 50px -10px; */
+  animation: a10-1 2s initial;
+  -webkit-animation: a10-1 2s initial;
 }
 .top-arrow:after {
   background-size: 10px calc(100% - 30px),100% 30px;
-  animation: a10-2 2s infinite;
+  animation: a10-2 2s initial;
+  -webkit-animation: a10-2 2s initial;
 }
 @keyframes a10-0 {
   25%,100% {padding-top:0px}
@@ -318,6 +319,25 @@ section{
 
 /* MEDIA QUERIES */
 
+@media (max-width: 800px){
+.menubar{
+  display: block;
+  }
+
+.App .header-B {
+  display: none;
+}
+
+ .bar2{
+   display: none !important;
+ } 
+
+
+ 
+ /* .bar1{
+   display: none !important;
+ }  */
+}
 @media (max-width: 668px){
   .cardB .icons .social-icon .social-iconF{
     height: 100%;
@@ -327,6 +347,8 @@ section{
     margin-right: 3rem;
     
 }
+
+
 .icons{
   display: flex;
   justify-content:space-between;
@@ -337,8 +359,7 @@ section{
   padding-bottom: 5rem;
   font-size: 16px;
 
-}
-}
+}}
 
 
 @media (max-width: 880px){
@@ -365,3 +386,52 @@ section{
 
 
 }
+
+
+
+
+
+
+
+
+
+
+/* 
+background: linear-gradient(90deg,#181313,#191c19 20%,#283320 35%,#314128 50%,#2f4518 63%,#181313 90%,#181313);
+    background-image: linear-gradient(90deg, rgb(24, 19, 19), rgb(25, 28, 25) 20%, rgb(40, 51, 32) 35%, rgb(49, 65, 40) 50%, rgb(47, 69, 24) 63%, rgb(24, 19, 19) 90%, rgb(24, 19, 19));
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: 400%;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    background-size: 400%;
+    -webkit-animation: bgAnimation 30s infinite;
+    animation: bgAnimation 30s infinite;
+    animation-duration: 30s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: bgAnimation;
+}
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+

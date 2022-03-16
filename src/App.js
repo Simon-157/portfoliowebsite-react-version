@@ -2,16 +2,16 @@
 import useLocalStorage from 'use-local-storage';
 import './App.css';
 import './contact.css';
-
+import MenuBar from './components/menu';
 import NavBar from './components/Navbar';
-import Home from './components/Home';
-import About from './components/About';
-import Skills from './components/Skills';
-import Frameworks from './components/Frameworks';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import Home from './pages/Home';
+import About from './pages/About';
+import Skills from './pages/Skills';
+import Frameworks from './pages/Frameworks';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 import Footer from './components/Footer';
-import Social from './components/SocialMedia';
+import Social from './pages/SocialMedia';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
   faSun,
@@ -32,52 +32,53 @@ function App() {
 
   return(
 
-      
-      <div className="App" dark-mode={mode}>
-          <div>
-            <NavBar />
-          </div>
-          <div className="header-B icons">
-            <input type="checkbox" className="dark-mode checkbox" id="chk" onChange={switchMode} />
-            <label className="label " for="chk">
-            <FontAwesomeIcon
-            icon={faSun} className= "ic"        
-            />
-            <FontAwesomeIcon 
-            icon={faMoon} className= "ic"
-            />
-                <div className="ball"></div>
-            </label>
-          </div>
-          <div>
-            <Home />
-          </div>
-          <div>
-            <About />
-          </div>
-          
-          <div >
-            <Skills />
-          </div>
-          
-          <div className = 'Fsection'>
-            <Frameworks />
-          </div>
+      <><div className="menubar">
+      <MenuBar />
+    </div><div className="App" dark-mode={mode}>
+        <div className="bar1">
+          <NavBar />
+        </div>
 
-          <div >
-            <Projects />
-          </div>
-          
-          <div className = 'Csection'>
-            <Contact />
-          </div>
-          <div>
-            <Social />
-          </div>
-          <div>
-            <Footer />
-          </div>
-    </div>
+
+        <div className="header-B icons">
+          <input type="checkbox" className="dark-mode checkbox" id="chk" onChange={switchMode} />
+          <label className="label " for="chk">
+            <FontAwesomeIcon
+              icon={faSun} className="ic" />
+            <FontAwesomeIcon
+              icon={faMoon} className="ic" />
+            <div className="ball"></div>
+          </label>
+        </div>
+        <div>
+          <Home />
+        </div>
+        <div>
+          <About />
+        </div>
+
+        <div>
+          <Skills />
+        </div>
+
+        <div className='Fsection'>
+          <Frameworks />
+        </div>
+
+        <div>
+          <Projects />
+        </div>
+
+        <div className='Csection'>
+          <Contact />
+        </div>
+        <div>
+          <Social />
+        </div>
+        <div>
+          <Footer />
+        </div>
+      </div></>
  
     
 

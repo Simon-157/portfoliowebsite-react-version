@@ -1,6 +1,7 @@
 
 import React, {useState} from 'react';
 import '../App.css';
+import Menu from './menu';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
@@ -11,26 +12,20 @@ import {
     faCircle}
     from "@fortawesome/free-solid-svg-icons";
 
-
-
-
-
 function NavBar() {
-
-   
 
   return(
 
+   
         <header className="{darkMode ? 'dark-mode' : 'light-mode'}">
             <div className="header-A">
             <a className="logo" href="#contact"><FontAwesomeIcon className="iconM" icon={faBell} /></a> <a className="logo" href="#home"><img className="iconM"src="/icon.png" alt=""></img>Simon Boateng</a>
 
             </div>
 
-            <div className="header-B">
-
-            <div id="menu-bar"><FontAwesomeIcon icon={faBars} /></div>
-
+            
+            <div className="header-B bar2">
+                
                 <nav className="navbar">
                     <a href="#home">home</a>
                     <a href="#about">About</a>
@@ -47,6 +42,7 @@ function NavBar() {
                 </div>
 
             </div>
+            
         </header>
     )
 
