@@ -3,10 +3,7 @@ import '../contact.css';
 import '../App.css';
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { 
-
-    faComment,
     faEnvelope,
-    faVideo,
     faPhone,
     
 } from "@fortawesome/free-solid-svg-icons";
